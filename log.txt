@@ -1,0 +1,10 @@
+[2025-04-28 23:27:49] [Input] Uživatel zadal M1: 2.0
+[2025-04-28 23:27:49] [Input] Uživatel zadal M2: 3.0
+[2025-04-28 23:27:50] [Input] Uživatel zadal p1: 4.0
+[2025-04-28 23:27:50] [Input] Uživatel zadal p2: 5.0
+[2025-04-28 23:27:51] [Input] Uživatel zadal m1: 7.0
+[2025-04-28 23:27:51] [Calculation] Vypočítáno m2: 13.125
+[2025-04-28 23:27:51] [Output] Výsledek m2: 13.12 (na dvě desetinná místa), 13.1250 (na čtyři desetinná místa)
+[2025-04-28 23:28:07] [Error] Hodnota 'gfdg' zadaná pro 'M1' není platné číslo.
+[2025-04-28 23:28:09] [Error] Hodnota 'dfggdgd' zadaná pro 'M1' není platné číslo.
+[2025-04-28 23:28:12] [Error] Hodnota 'bnvnv' zadaná pro 'M1' není platné číslo.
