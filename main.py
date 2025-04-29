@@ -3,13 +3,11 @@ import math
 from datetime import datetime
 
 def log(section, message):
-    """Zapíše logovací zprávu do souboru log.txt."""
     with open("log.txt", "a", encoding="utf-8") as log_file:
         date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         log_file.write(f"[{date}] [{section}] {message}\n")
 
 def read_float(name):
-    """Načte číselnou hodnotu od uživatele."""
     while True:
         value = input(f"Zadej {name} (nebo 'k' pro konec): ").strip().lower()
         if value == 'k':
@@ -26,19 +24,16 @@ def read_float(name):
             print(f"Chyba: Hodnota '{value}' zadaná pro '{name}' není platné číslo.")
 
 def calculate_m2(m1, M1, M2, p1, p2):
-    """Vypočítá hodnotu m2."""
     result = (m1 / M1) * M2 * (p2 / p1)
     log("Calculation", f"Vypočítáno m2: {result}")
     return result
 
 def print_result(m2):
-    """Vypíše výsledek výpočtu."""
     log("Output", f"Výsledek m2: {m2:.2f} (na dvě desetinná místa), {m2:.4f} (na čtyři desetinná místa)")
     print(f"m2 je: {m2:.2f} na dvě desetinná místa")
     print(f"m2 je: {m2:.4f} na čtyři desetinná místa")
 
 def get_common_values():
-    """Načte společné hodnoty M1, M2, p1, p2."""
     M1 = read_float("M1")
     M2 = read_float("M2")
     p1 = read_float("p1")
